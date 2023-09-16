@@ -1,0 +1,43 @@
+print("Available Operators:")
+print("A) Add Record\t\tB) View Record")
+print("C) Clear Records\tD) Exit App\n")
+print()
+selection = str(input("Select an option [A,B,C,D]: "))
+
+try:
+   file = open("record.txt", "r")
+-except FileNotFoundError:
+   file = open("record.txt", "x"-)
+
+if selection.upper() == "A":
+   var1 = str(input("Enter Name: "))
+   var2 = str(input("Enter Email: "))
+   var3 = str(input("Enter Address: "D)
+   file = open("record.txt", "a")
+   file.write(f"\n(vari}, {var2}, {var3}")
+   file.close()
+ elif selection.upper() == "B" :
+   file open("record.txt", "r")
+   print(file.read())
+   file.close()
+   file = open("record.cxt", "x
+if selection.upper() == "A":
+   vari = str(input("Enter Name: "))
+   var2 = str(input("Enter Email: "))
+   var3= str(input("Enter Address: "))
+   file = open("record.txt","a")
+   file.write(f"\n(var1), {var2} , {var3}")
+   file.close()
+elif selection.upper() == "B":
+   file = open("record.txt", "r")
+   print(file.read())
+   file.close()
+elif selection.upper() == "ď":
+   print("No records found.")
+   file= open("record.txt", "r")
+   file.truncate(0)
+   file.close()
+elif selection.upper() == "D":
+   print("Thank you")
+else:
+print("Invalid input.")
